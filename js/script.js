@@ -1,7 +1,7 @@
-function playGame(playerInput) {{
+const playGame(playerInput) = function() {{
   clearMessages()
 
-  function getMoveName(argMoveId) {
+  const getMoveName(argMoveId) = function() {
     if (argMoveId == 1) {
       return 'kamień';
     }
@@ -30,7 +30,7 @@ function playGame(playerInput) {{
 
   console.log('moves:', argComputerMove, argPlayerMove);
 
-  function displayResult(argComputerMove, argPlayerMove) {
+  const displayResult(argComputerMove, argPlayerMove) = function () {
     printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
 
     if (argComputerMove == 'kamień' && argPlayerMove == 'papier') {
